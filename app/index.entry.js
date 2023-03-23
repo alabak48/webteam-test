@@ -4,11 +4,27 @@ import fallbackStylesheetUrl from '!!file-loader!./exterrnal-libs/layout/layout-
 import { supportsCssVars, createLink } from './exterrnal-libs/layout/utils';
 import './index.entry.pcss';
 import './exterrnal-libs/breakpoints/index.css';
+import {createRoot} from "react-dom/client";
+import NavigationBar from "./components/NavigationBar";
+import ProductPackImage from "./components/ProductPackImage";
+import React from "react";
+import TypesExample from "./components/Buttons";
 
 if (!supportsCssVars()) {
   createLink(fallbackStylesheetUrl);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  const container = document.getElementById('navigation-bar');
+  const root = createRoot(container);
+  root.render(<NavigationBar/>);
+
+  const imageContainer = document.getElementById('product-pack-image');
+  const allPackImage = createRoot(imageContainer);
+  allPackImage.render(<ProductPackImage/>);
+
+  const btnWantAll = document.getElementById('want-it-all-button');
+  const wantItAllBtn = createRoot(btnWantAll);
+  wantItAllBtn.render(<TypesExample/>);
 
 });

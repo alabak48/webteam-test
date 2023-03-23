@@ -31,7 +31,7 @@ const webpackConfig = {
     rules: [
       {
         test: /\.jsx?$/,
-        loader: 'babel-loader',
+        loader: 'babel-loader'
       },
       {
         test: /\.pcss$/,
@@ -66,7 +66,7 @@ const webpackConfig = {
         test: /\.json$/,
         loader: 'file-loader',
         options: {
-          name: 'static/[name].[hash].[ext]',
+          name: 'static/[name].[hash].[ext]'
         },
       },
     ]
