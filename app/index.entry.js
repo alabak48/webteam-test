@@ -9,6 +9,9 @@ import NavigationBar from "./components/NavigationBar";
 import ProductPackImage from "./components/ProductPackImage";
 import React from "react";
 import TypesExample from "./components/Buttons";
+import MainHeading from "./components/MainHeading";
+
+
 
 if (!supportsCssVars()) {
   createLink(fallbackStylesheetUrl);
@@ -27,4 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const wantItAllBtn = createRoot(btnWantAll);
   wantItAllBtn.render(<TypesExample/>);
 
+  const mainHeading = document.getElementById('main-heading');
+  const mainHeadingTitle = createRoot(mainHeading);
+  mainHeadingTitle.render(<MainHeading/>);
 });

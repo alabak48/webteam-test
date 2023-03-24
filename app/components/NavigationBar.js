@@ -4,10 +4,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
-
+import 'index.entry.pcss';
 function NavigationBar() {
   return (
-      <Navbar collapseOnSelect expand="lg">
+      <Navbar collapseOnSelect expand="lg" id='Navigation'>
         <Container className='NavigationContainer'>
           <Navbar.Brand href="#home" id='toolbox'>Toolbox</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

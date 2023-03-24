@@ -1,12 +1,12 @@
 import Button from 'react-bootstrap/Button';
 import React from 'react';
 import 'index.entry.pcss';
-function TypesExample() {
+function MainHeading() {
   return (
     <>
-      <Button variant="primary" id='btn'>I Want It All</Button>
+      <h1 id='main-heading'>All Products Pack</h1>
     </>
   );
 }
 
-export default TypesExample;
+export default MainHeading;
