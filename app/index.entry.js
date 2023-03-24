@@ -10,6 +10,7 @@ import ProductPackImage from "./components/ProductPackImage";
 import React from "react";
 import TypesExample from "./components/Buttons";
 import MainHeading from "./components/MainHeading";
+import TableIDE from "./components/TenIdeS";
 
 
 
@@ -33,4 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const mainHeading = document.getElementById('main-heading');
   const mainHeadingTitle = createRoot(mainHeading);
   mainHeadingTitle.render(<MainHeading/>);
+
+  const tableIde = document.getElementById('ide-table');
+  const ideTable = createRoot(tableIde);
+  ideTable.render(<TableIDE/>);
 });
