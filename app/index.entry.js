@@ -12,7 +12,7 @@ import TypesExample from "./components/Buttons";
 import MainHeading from "./components/MainHeading";
 import TableIDE from "./components/TenIdeS";
 import IdeLanguages from "./components/IdeLanguages";
-import LanguageButton from "./components/LanguageButton";
+
 
 
 if (!supportsCssVars()) {
@@ -36,9 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const mainHeadingTitle = createRoot(mainHeading);
   mainHeadingTitle.render(<MainHeading/>);
 
-  const tableIde = document.getElementById('ide-table');
-  const ideTable = createRoot(tableIde);
-  ideTable.render(<TableIDE/>);
+  createRoot(document.getElementById('ide-table')).render(React.createElement(TableIDE, {isIdeTable: true}));
+  createRoot(document.getElementById('ext-table')).render(React.createElement(TableIDE, {isIdeTable: false}));
 
   createRoot(document.getElementById('intellij')).render(React.createElement(IdeLanguages, {headerText: "IntelliJ IDEA Ultimate", buttonText: "Kotlin", buttonText2: "Java"}));
   createRoot(document.getElementById('webstorm')).render(React.createElement(IdeLanguages, {headerText: "WebStorm", buttonText: "mysql", buttonText2: ""}));
