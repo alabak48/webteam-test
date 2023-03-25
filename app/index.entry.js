@@ -12,6 +12,7 @@ import TypesExample from "./components/Buttons";
 import MainHeading from "./components/MainHeading";
 import TableIDE from "./components/TenIdeS";
 import IdeLanguages from "./components/IdeLanguages";
+import LanguageButton from "./components/LanguageButton";
 
 
 if (!supportsCssVars()) {
