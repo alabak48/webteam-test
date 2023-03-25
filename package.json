@@ -11,6 +11,7 @@
     "@babel/plugin-transform-runtime": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "@babel/runtime-corejs2": "^7.4.4",
+    "@jetbrains/icons": "^3.21.0",
     "@jetbrains/logos": "^2.2.13",
     "autoprefixer": "^9.5.1",
     "babel-loader": "^8.0.5",

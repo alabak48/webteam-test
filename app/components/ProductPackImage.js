@@ -1,10 +1,9 @@
 import React from 'react';
-import allProductPackImage from 'assets/img-1-copy.png'
 
 
-function ProductPackImage() {
+const ProductPackImage = (props) => {
   return (
-    <img src={allProductPackImage} alt="AllProductPackImages" />
+    <img src={props.allProductPackImage} alt="AllProductPackImages" />
 );
 }
 export default ProductPackImage;

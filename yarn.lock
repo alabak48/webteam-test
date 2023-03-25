@@ -661,6 +661,11 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     "to-fast-properties" "^2.0.0"
 
+"@jetbrains/icons@^3.21.0":
+  "integrity" "sha512-EpIRnxi93WFoTfG1pADNX3pYdtQyt58rX7sQxVoQ9B1RnD4xl6URuD+bPhvS2WAIGaJAgOtfEsu+G7PF5kKeUw=="
+  "resolved" "https://registry.npmjs.org/@jetbrains/icons/-/icons-3.21.0.tgz"
+  "version" "3.21.0"
+
 "@jetbrains/logos@^2.2.13":
   "integrity" "sha512-++RNRLXpBeyduP7rg0hiA2ZfHGRfkEoPpPY7Ttv0ZiOp+jkpadhSHmXHxmFEEJ55BET0OF4pLDPkOr0xJJfmGg=="
   "resolved" "https://registry.npmjs.org/@jetbrains/logos/-/logos-2.2.13.tgz"
