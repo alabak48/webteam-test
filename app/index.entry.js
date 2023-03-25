@@ -32,6 +32,13 @@ import waveImage from "assets/img-2.png";
 import IconLink from "./components/IconLink";
 import downloadImage from "assets/download.svg";
 import EmailForm from "./components/EmailForm";
+import twitterPack from "assets/twitterPack.svg";
+import bug from "assets/bug.svg";
+import blog from "assets/blog.svg";
+import jetbrains from "assets/jb.svg";
+import About from "./components/About";
+
+
 
 
 
@@ -105,6 +112,22 @@ document.addEventListener('DOMContentLoaded', () => {
   createRoot(document.getElementById('stay-updated')).render(React.createElement(FaqContainer,{headingTxt: "Stay updated"}));
 
   createRoot(document.getElementById('email-form')).render(<EmailForm/>);
+
+  createRoot(document.getElementById('twitter-pack')).render(React.createElement(IconLink,{linkImage: twitterPack, txtLink: "@AllProductsPack on Twitter"}));
+  createRoot(document.getElementById('blog')).render(React.createElement(IconLink,{linkImage: blog, txtLink: "JetBrains Blog"}));
+  createRoot(document.getElementById('bug')).render(React.createElement(IconLink,{linkImage: bug, txtLink: "Bug and Issue Tracker"}));
+
+  createRoot(document.getElementById('jb-logo')).render(React.createElement(ProductPackImage,{allProductPackImage: jetbrains }));
+
+  createRoot(document.getElementById('facebook-social')).render(React.createElement(IconLink,{linkImage: twitterPack}));
+  createRoot(document.getElementById('twitter-social')).render(React.createElement(IconLink,{linkImage: blog}));
+  createRoot(document.getElementById('linkedin-social')).render(React.createElement(IconLink,{linkImage: bug}));
+  createRoot(document.getElementById('read-social')).render(React.createElement(IconLink,{linkImage: bug}));
+
+  createRoot(document.getElementById('about-us')).render(<About/>);
+
+
+
 
 
 });
