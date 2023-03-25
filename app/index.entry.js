@@ -50,4 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
   createRoot(document.getElementById('phpstorm')).render(React.createElement(IdeLanguages, {headerText: "PhpStorm", buttonText: "mysql", buttonText2: "database"}));
   createRoot(document.getElementById('pycharm')).render(React.createElement(IdeLanguages, {headerText: "PyCharm", buttonText: "mysql", buttonText2: "database"}));
 
+  createRoot(document.getElementById('re-sharp')).render(React.createElement(IdeLanguages, {headerText: "ReSharper", buttonText: "mysql", buttonText2: "database"}));
+  createRoot(document.getElementById('dot-trace')).render(React.createElement(IdeLanguages, {headerText: "dotTrace", buttonText: "Ruby", buttonText2: ""}));
+  createRoot(document.getElementById('dot-memory')).render(React.createElement(IdeLanguages, {headerText: "dotMemory", buttonText: "c", buttonText2: ""}));
+  createRoot(document.getElementById('re-sharp-cpp')).render(React.createElement(IdeLanguages, {headerText: "ReSharper C++", buttonText: "C++", buttonText2: ""}));
+  createRoot(document.getElementById('dot-cover')).render(React.createElement(IdeLanguages, {headerText: "dotCover", buttonText: "mysql", buttonText2: ""}));
+
 });
