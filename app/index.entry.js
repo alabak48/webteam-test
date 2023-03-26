@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
   createRoot(document.getElementById('product-pack-image')).render(React.createElement(ProductPackImage,{allProductPackImage: allProductPackImage, clsName:"mainImage" }));
   createRoot(document.getElementById('product-pack-image-two')).render(React.createElement(ProductPackImage,{allProductPackImage: imageComputer,clsName:"secondImage" }));
   createRoot(document.getElementById('image-third')).render(React.createElement(ProductPackImage,{allProductPackImage: waveImage, clsName: "thirdImage" }));
+  createRoot(document.getElementById('screen-product-page')).render(React.createElement(ProductPackImage,{allProductPackImage: screenProductImage, clsName: "screenImage" }));
 
 
 
@@ -87,10 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
   createRoot(document.getElementById('flexibility')).render(React.createElement(IconHeaderText, {iconSimbol: flexiblity, iconHeading: "Flexibility", paragraphDescr: "Use different tools for different projects on multiple machines as and when you need them. Easily switch between the tools under the All Products Pack license."}));
   createRoot(document.getElementById('toggle')).render(React.createElement(IconHeaderText, {iconSimbol: toggle, iconHeading: "Simple license management", paragraphDescr: "One unique license includes all the JetBrains desktop tools. Get unlimited access to all of them."}));
   createRoot(document.getElementById('skill')).render(React.createElement(IconHeaderText, {iconSimbol: skills, iconHeading: "Further your skills", paragraphDescr: "Advance your programming skills with the best professional tools."}));
-
-  createRoot(document.getElementById('screen-product-page')).render(React.createElement(ProductPackImage,{allProductPackImage: screenProductImage }));
   createRoot(document.getElementById('maintain-tools')).render(React.createElement(HeadingTextLink,{headingTxt: "Maintain your tools with the Toolbox App", simpleTxt: "Simple installations, updates, and more", linkToSmt: "", txtToLink: "Learn More"}));
-  createRoot(document.getElementById('screen-product-page')).render(React.createElement(ProductPackImage,{allProductPackImage: screenProductImage }));
 
 
   createRoot(document.getElementById('google')).render(React.createElement(ProductPackImage,{allProductPackImage: google }));
