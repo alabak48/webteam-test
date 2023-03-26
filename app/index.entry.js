@@ -57,8 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
   wantItAllBtn.render(<TypesExample/>);
 
 
-  createRoot(document.getElementById('product-pack-image')).render(React.createElement(ProductPackImage,{allProductPackImage: allProductPackImage }));
-  createRoot(document.getElementById('product-pack-image-two')).render(React.createElement(ProductPackImage,{allProductPackImage: imageComputer }));
+  createRoot(document.getElementById('product-pack-image')).render(React.createElement(ProductPackImage,{allProductPackImage: allProductPackImage, clsName:"mainImage" }));
+  createRoot(document.getElementById('product-pack-image-two')).render(React.createElement(ProductPackImage,{allProductPackImage: imageComputer,clsName:"secondImage" }));
+  createRoot(document.getElementById('image-third')).render(React.createElement(ProductPackImage,{allProductPackImage: waveImage, clsName: "thirdImage" }));
 
 
 
@@ -103,7 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
   createRoot(document.getElementById('faq-container')).render(React.createElement(FaqContainer,{headingTxt: "FAQ", simpleTxt: "Can I upgrade my existing IntelliJ IDEA, PyCharm, WebStorm or ReSharper Ultimate or any other JetBrains IDE license to the All Products Pack", txt: "Yes, your existing licenses to any JetBrains desktop product make you eligible to purchase new All Products Pack subscriptions with an additional discount." }));
   createRoot(document.getElementById('faq-second-container')).render(React.createElement(FaqContainer,{simpleTxt: "How to upgrade to the All Products Pack?", txt: "You can upgrade your current subscription to All Products Pack license from your JetBrains account using the “Upgrade” link, which is displayed next to all the licenses that can be upgraded. You can click this link to go to JetBrains eStore and complete the order. If you have any questions, please contact Sales."}));
 
-  createRoot(document.getElementById('image-second')).render(React.createElement(ProductPackImage,{allProductPackImage: waveImage }));
   createRoot(document.getElementById('trust')).render(React.createElement(HeadingTextLink,{headingTxt: "Trusted by 320,083 businesses worldwide"}));
   createRoot(document.getElementById('main-heading')).render(React.createElement(MainHeading,{mainHeading: "All Products Pack" }));
   createRoot(document.getElementById('enhance-productivity')).render(React.createElement(FaqContainer,{headingTxt: "Enhance your productivity and speed up coding with JetBrains tools!" }));
