@@ -72,7 +72,7 @@ const TableIDE = (props) => {
               <a href={secondData[index].url}> <img id="img-mobile" key={index} src={secondData[index].img} alt={`Image ${secondData[index].headerText}`}/></a>
               <h5 id="header-mobile">{secondData[index].headerText}</h5>
               <button className='button-languages'>{secondData[index].buttonText}</button>
-              {data[index].buttonText2.length !== 0 && <button className='button-languages'>{secondData[index].buttonText2}</button>}
+              {secondData[index].buttonText2.length !== 0 && <button className='button-languages'>{secondData[index].buttonText2}</button>}
             </td>);
         } else {
           cells.push(<td key={i + j}></td>);
