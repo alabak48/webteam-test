@@ -83,6 +83,9 @@ body {
 }
 #overview{
   color: #FC801D;
+  @media (--sm) {
+    display: none;
+  }
 }
 
 
@@ -99,6 +102,13 @@ body {
   padding: 4px 19px 4px 18px;
   border-radius: 25px;
   border: solid 1px rgba(39, 40, 44, 0.4);
+  @media (--sm) {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    width: 65px;
+  }
 }
 
 #toolbox{
