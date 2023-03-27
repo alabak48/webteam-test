@@ -90,22 +90,22 @@ document.addEventListener('DOMContentLoaded', () => {
   createRoot(document.getElementById('ext-table')).render(React.createElement(TableIDE, {isIdeTable: false}));
 
 
-  createRoot(document.getElementById('intellij')).render(React.createElement(IdeLanguages, {headerText: "IntelliJ IDEA Ultimate", buttonText: "Kotlin", buttonText2: "Java"}));
-  createRoot(document.getElementById('webstorm')).render(React.createElement(IdeLanguages, {headerText: "WebStorm", buttonText: "HTML", buttonText2: ""}));
-  createRoot(document.getElementById('rider')).render(React.createElement(IdeLanguages, {headerText: "Rider", buttonText: "C#", buttonText2: ".NET"}));
-  createRoot(document.getElementById('rubymine')).render(React.createElement(IdeLanguages, {headerText: "RubyMine", buttonText: "Ruby", buttonText2: ""}));
-  createRoot(document.getElementById('resharper')).render(React.createElement(IdeLanguages, {headerText: "ReSharper Ultimate", buttonText: "C++", buttonText2: ""}));
-  createRoot(document.getElementById('appcode')).render(React.createElement(IdeLanguages, {headerText: "AppCode", buttonText: "mysql", buttonText2: "database"}));
-  createRoot(document.getElementById('datagrip')).render(React.createElement(IdeLanguages, {headerText: "DataGrip", buttonText: "C", buttonText2: ""}));
-  createRoot(document.getElementById('clion')).render(React.createElement(IdeLanguages, {headerText: "CLion", buttonText: "Ruby", buttonText2: ""}));
-  createRoot(document.getElementById('phpstorm')).render(React.createElement(IdeLanguages, {headerText: "PhpStorm", buttonText: "mysql", buttonText2: "database"}));
-  createRoot(document.getElementById('pycharm')).render(React.createElement(IdeLanguages, {headerText: "PyCharm", buttonText: "mysql", buttonText2: "database"}));
+  createRoot(document.getElementById('intellij')).render(React.createElement(IdeLanguages, {headerText: "IntelliJ IDEA Ultimate", buttonText: "Kotlin", buttonText2: "Java", url:"https://www.jetbrains.com/idea/"}));
+  createRoot(document.getElementById('webstorm')).render(React.createElement(IdeLanguages, {headerText: "WebStorm", buttonText: "HTML", buttonText2: "", url:"https://www.jetbrains.com/webstorm/"}));
+  createRoot(document.getElementById('rider')).render(React.createElement(IdeLanguages, {headerText: "Rider", buttonText: "C#", buttonText2: ".NET", url:"https://www.jetbrains.com/rider/"}));
+  createRoot(document.getElementById('rubymine')).render(React.createElement(IdeLanguages, {headerText: "RubyMine", buttonText: "Ruby", buttonText2: "", url:"https://www.jetbrains.com/ruby/"}));
+  createRoot(document.getElementById('resharper')).render(React.createElement(IdeLanguages, {headerText: "ReSharper Ultimate", buttonText: "C++", buttonText2: "", url:"https://www.jetbrains.com/resharper/"}));
+  createRoot(document.getElementById('appcode')).render(React.createElement(IdeLanguages, {headerText: "AppCode", buttonText: "mysql", buttonText2: "database", url:"https://www.jetbrains.com/objc/"}));
+  createRoot(document.getElementById('datagrip')).render(React.createElement(IdeLanguages, {headerText: "DataGrip", buttonText: "C", buttonText2: "", url:"https://www.jetbrains.com/datagrip/"}));
+  createRoot(document.getElementById('clion')).render(React.createElement(IdeLanguages, {headerText: "CLion", buttonText: "Ruby", buttonText2: "", url:"https://www.jetbrains.com/clion/"}));
+  createRoot(document.getElementById('phpstorm')).render(React.createElement(IdeLanguages, {headerText: "PhpStorm", buttonText: "mysql", buttonText2: "database", url:"https://www.jetbrains.com/phpstorm/"}));
+  createRoot(document.getElementById('pycharm')).render(React.createElement(IdeLanguages, {headerText: "PyCharm", buttonText: "mysql", buttonText2: "database", url:"https://www.jetbrains.com/pycharm/"}));
 
-  createRoot(document.getElementById('re-sharp')).render(React.createElement(IdeLanguages, {headerText: "ReSharper", buttonText: "mysql", buttonText2: "database"}));
-  createRoot(document.getElementById('dot-trace')).render(React.createElement(IdeLanguages, {headerText: "dotTrace", buttonText: "Ruby", buttonText2: ""}));
-  createRoot(document.getElementById('dot-memory')).render(React.createElement(IdeLanguages, {headerText: "dotMemory", buttonText: "c", buttonText2: ""}));
-  createRoot(document.getElementById('re-sharp-cpp')).render(React.createElement(IdeLanguages, {headerText: "ReSharper C++", buttonText: "C++", buttonText2: ""}));
-  createRoot(document.getElementById('dot-cover')).render(React.createElement(IdeLanguages, {headerText: "dotCover", buttonText: "mysql", buttonText2: ""}));
+  createRoot(document.getElementById('re-sharp')).render(React.createElement(IdeLanguages, {headerText: "ReSharper", buttonText: "mysql", buttonText2: "database", url:"https://www.jetbrains.com/resharper/"}));
+  createRoot(document.getElementById('dot-trace')).render(React.createElement(IdeLanguages, {headerText: "dotTrace", buttonText: "Ruby", buttonText2: "", url:"https://www.jetbrains.com/profiler/"}));
+  createRoot(document.getElementById('dot-memory')).render(React.createElement(IdeLanguages, {headerText: "dotMemory", buttonText: "c", buttonText2: "", url:"https://www.jetbrains.com/dotmemory/"}));
+  createRoot(document.getElementById('re-sharp-cpp')).render(React.createElement(IdeLanguages, {headerText: "ReSharper C++", buttonText: "C++", buttonText2: "", url:"https://www.jetbrains.com/resharper-cpp/"}));
+  createRoot(document.getElementById('dot-cover')).render(React.createElement(IdeLanguages, {headerText: "dotCover", buttonText: "mysql", buttonText2: "", url:"https://www.jetbrains.com/dotcover/"}));
 
   createRoot(document.getElementById('great-value')).render(React.createElement(IconHeaderText, {iconSimbol: GreatValue, iconHeading: "Great value", paragraphDescr: "Get 10 IDEs for the price of 2."}));
   createRoot(document.getElementById('flexibility')).render(React.createElement(IconHeaderText, {iconSimbol: Flexibility, iconHeading: "Flexibility", paragraphDescr: "Use different tools for different projects on multiple machines as and when you need them. Easily switch between the tools under the All Products Pack license."}));
