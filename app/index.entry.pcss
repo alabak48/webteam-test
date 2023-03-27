@@ -75,7 +75,7 @@ body {
 
 #Navigation{
   background-color: white;
-
+  border-bottom: solid 1px rgba(39, 40, 44, 0.2);
 }
 #overview{
   color: #FC801D;
@@ -204,6 +204,11 @@ body {
   border-radius: 25px;
   border: #f76707 solid;
   background-color: #f76707;
+  opacity: 1;
+}
+
+#btn-org:hover{
+  opacity: 0.5;
 }
 
 .button-languages{
@@ -264,6 +269,12 @@ body {
   line-height: 1.56;
   letter-spacing: normal;
   color: #f76707;
+  @media (--sm) {
+    font-size: 14px;
+  }
+  @media (--md) {
+    font-size: 14px;
+  }
 }
 
 .about{
@@ -276,12 +287,20 @@ body {
   line-height: 1.6;
   letter-spacing: normal;
   color: #fff;
+  @media (--sm) {
+  width: 20px;
+    text-align: left;
+    float: left;
+  }
 
 }
 
 .list-about > ul >li{
   color: rgba(255, 255, 255, 0.6);
   list-style: none;
+  @media (--md) {
+    font-size: 12px;
+  }
 }
 
 .mainImage{
@@ -302,7 +321,7 @@ body {
     display: none;
   }
   @media (--md) {
-    height: 270px;
+    height: 250px;
     width: 320px;
   }
 }
@@ -310,6 +329,10 @@ body {
 .thirdImage{
   @media (--sm) {
     display: none;
+  }
+  @media (--md) {
+    width: 280px;
+    height: 200px;
   }
 }
 
@@ -353,6 +376,10 @@ body {
 #main{
   @media (--sm) {
     font-size: 24px;
+    color: var(--text-color);
+  }
+  @media (--md) {
+    font-size: 22px;
     color: var(--text-color);
   }
 }
@@ -405,6 +432,9 @@ body {
 
 #flw-us{
   color: white;
+  @media (--md) {
+    font-size: 14px;
+  }
 }
 
 #fb{
@@ -413,24 +443,41 @@ body {
 
 #about{
   margin-left: 33px;
-
+  @media (--md) {
+    font-size: 14px;
+  }
 }
 
 #rghts, #drv {
   color: rgba(255, 255, 255, 0.6);
   font-size: 15px;
   font-weight: lighter;
+  @media (--md) {
+    font-size: 10px;
+    padding-top: 10px;
+  }
 
 }
 #prv{
   color: #ffffff;
   font-size: 15px;
   font-weight: lighter;
+  @media (--md) {
+    font-size: 10px;
+    padding-top: 10px;
+  }
+}
+#jb-logo{
+  @media (--sm) {
+    display: none;
+  }
 }
 
-#about{
+#jb-logo-mobile{
+  display: none;
   @media (--sm) {
-    margin-right: 200pt;
+    display: unset;
+    float: left;
   }
 }
 
@@ -471,9 +518,15 @@ body {
 
 #icons-ides{
   margin: 20px;
+  opacity: 0.4;
+  transition: opacity 0.3s ease-in-out;
   @media (--md) {
     width: 60px;
   }
+}
+
+#icons-ides:hover{
+  opacity: 1;
 }
 
 #main-table{

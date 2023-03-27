@@ -57,6 +57,7 @@ import extDc from "@jetbrains/logos/dotcover/dotcover.svg";
 import extDm from "@jetbrains/logos/dotmemory/dotmemory.svg/";
 import extDt from "@jetbrains/logos/dottrace/dottrace.svg";
 import ProductIcon from "./components/ProductIcon";
+import JetbrainsLogo from "assets/jbmobile.svg";
 
 
 
@@ -77,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  createRoot(document.getElementById('want-it-all-button')).render(React.createElement(Buttons,{btnTxt: "I want it all"}));
+  createRoot(document.getElementById('want-it-all-button')).render(React.createElement(Buttons,{btnTxt: "I Want It All"}));
 
 
   createRoot(document.getElementById('product-pack-image')).render(React.createElement(ProductPackImage,{allProductPackImage: allProductPackImage, clsName:"mainImage" }));
@@ -141,6 +142,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   createRoot(document.getElementById('jb-logo')).render(React.createElement(ProductPackImage,{allProductPackImage: jetbrains }));
+  createRoot(document.getElementById('jb-logo-mobile')).render(React.createElement(ProductPackImage,{allProductPackImage: JetbrainsLogo }));
+
 
   createRoot(document.getElementById('follow-jb')).render(React.createElement(SmHeading,{idSmallestHeading: "flw-us", smallestHeadingTxt: "Follow Jetbrains"}));
   createRoot(document.getElementById('fb')).render(React.createElement(IconLink,{linkImage: Fb, clsName:"f-b" }));
