@@ -203,6 +203,8 @@ body {
   text-align: center;
   color: rgba(39, 40, 44, 0.7);
   margin: 10px;
+  padding: 4px 12px 4px 12px;
+
 }
 
 #heading-text{
@@ -266,10 +268,7 @@ body {
 }
 
 .mainImage{
-    width: 305px;
-    height: 305px;
     padding-top: 64px;
-
   }
 
 .mainImage{
@@ -389,11 +388,13 @@ body {
   border-radius: 1pt;
 }
 
-#flw-us{
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.6);
+#flwUs{
+  font-size: 18px;
 }
 
+#flw-us{
+  color: white;
+}
 
 #fb{
   margin-left: 17px;
@@ -424,6 +425,10 @@ body {
   }
 }
 
+.hp-media{
+  margin-left: 45px;
+}
+
 .google-media, .hp-media, .samsung-media{
   margin-bottom: 47px;
 }
@@ -439,10 +444,59 @@ body {
     margin-left: 60px;
   }
 }
+.twitter-media{
+  margin-top: 20px;
+  margin-left: 45px;
 
+}
 .twitter-media{
   @media (--sm) {
     margin-left: 120px;
     margin-top: 20px;
   }
 }
+
+#icons-ides{
+  margin: 20px;
+}
+
+#main-table{
+  @media (--sm) {
+    display: none;
+  }
+}
+
+#ide-table{
+  display: none;
+  @media (--sm) {
+    display: unset;
+  }
+}
+
+#second-table {
+  @media (--sm) {
+    display: none;
+  }
+}
+#ext-table{
+  display: none;
+  @media (--sm) {
+    display: unset;
+  }
+}
+
+#img-mobile{
+  width: 50px;
+  height: 50px;
+  }
+
+#header-mobile{
+  font-size: 15px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: var(--text-color);
+
+}
+

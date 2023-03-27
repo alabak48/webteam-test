@@ -5,7 +5,7 @@ function EmailForm() {
   return (
     <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Control type="email" placeholder="Your email" id="placeholder" />
+        <Form.Control type="email" placeholder="Your email" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="By submitting this form I agree to the JetBrains Privacy Policy?" />

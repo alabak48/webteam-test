@@ -11,10 +11,6 @@ import React from "react";
 import MainHeading from "./components/MainHeading";
 import TableIDE from "./components/TenIdeS";
 import IdeLanguages from "./components/IdeLanguages";
-import tag from "assets/tag.png";
-import flexiblity from "assets/flexibility.png";
-import toggle from "assets/slider.png";
-import  skills from "assets/skills.png";
 import IconHeaderText from "./components/IconHeaderText";
 import allProductPackImage from 'assets/img-1-copy.png';
 import imageComputer from 'assets/img-4.png';
@@ -42,6 +38,27 @@ import Fb from "assets/fb.svg";
 import Twt from "assets/twt.svg";
 import Lnkd from "assets/lnkd.svg";
 import Yt from "assets/yt.svg";
+import GreatValue from "assets/discount.svg";
+import Flexibility from "assets/flex.svg";
+import UseAccount from "assets/use-account.svg";
+import Learn from "assets/learn.svg";
+import ideIj from "@jetbrains/logos/intellij-idea/intellij-idea.svg";
+import ideWs from "@jetbrains/logos/webstorm/webstorm.svg";
+import ideRe from "@jetbrains/logos/resharper/resharper.svg";
+import ideRi from "@jetbrains/logos/rider/rider.svg";
+import ideAp from "@jetbrains/logos/appcode/appcode.svg";
+import ideCl from "@jetbrains/logos/clion/clion.svg";
+import ideRu from "@jetbrains/logos/rubymine/rubymine.svg";
+import ideDa from "@jetbrains/logos/datagrip/datagrip.svg";
+import idePh from "@jetbrains/logos/phpstorm/phpstorm.svg";
+import idePy from "@jetbrains/logos/pycharm/pycharm.svg";
+import extRs from "@jetbrains/logos/resharper-cpp/resharper-cpp.svg";
+import extDc from "@jetbrains/logos/dotcover/dotcover.svg";
+import extDm from "@jetbrains/logos/dotmemory/dotmemory.svg/";
+import extDt from "@jetbrains/logos/dottrace/dottrace.svg";
+import ProductIcon from "./components/ProductIcon";
+
+
 
 
 
@@ -68,10 +85,9 @@ document.addEventListener('DOMContentLoaded', () => {
   createRoot(document.getElementById('image-third')).render(React.createElement(ProductPackImage,{allProductPackImage: waveImage, clsName: "thirdImage" }));
   createRoot(document.getElementById('screen-product-page')).render(React.createElement(ProductPackImage,{allProductPackImage: screenProductImage, clsName: "screenImage" }));
 
-
-
   createRoot(document.getElementById('ide-table')).render(React.createElement(TableIDE, {isIdeTable: true}));
   createRoot(document.getElementById('ext-table')).render(React.createElement(TableIDE, {isIdeTable: false}));
+
 
   createRoot(document.getElementById('intellij')).render(React.createElement(IdeLanguages, {headerText: "IntelliJ IDEA Ultimate", buttonText: "Kotlin", buttonText2: "Java"}));
   createRoot(document.getElementById('webstorm')).render(React.createElement(IdeLanguages, {headerText: "WebStorm", buttonText: "HTML", buttonText2: ""}));
@@ -90,10 +106,10 @@ document.addEventListener('DOMContentLoaded', () => {
   createRoot(document.getElementById('re-sharp-cpp')).render(React.createElement(IdeLanguages, {headerText: "ReSharper C++", buttonText: "C++", buttonText2: ""}));
   createRoot(document.getElementById('dot-cover')).render(React.createElement(IdeLanguages, {headerText: "dotCover", buttonText: "mysql", buttonText2: ""}));
 
-  createRoot(document.getElementById('great-value')).render(React.createElement(IconHeaderText, {iconSimbol: tag, iconHeading: "Great value", paragraphDescr: "Get 10 IDEs for the price of 2."}));
-  createRoot(document.getElementById('flexibility')).render(React.createElement(IconHeaderText, {iconSimbol: flexiblity, iconHeading: "Flexibility", paragraphDescr: "Use different tools for different projects on multiple machines as and when you need them. Easily switch between the tools under the All Products Pack license."}));
-  createRoot(document.getElementById('toggle')).render(React.createElement(IconHeaderText, {iconSimbol: toggle, iconHeading: "Simple license management", paragraphDescr: "One unique license includes all the JetBrains desktop tools. Get unlimited access to all of them."}));
-  createRoot(document.getElementById('skill')).render(React.createElement(IconHeaderText, {iconSimbol: skills, iconHeading: "Further your skills", paragraphDescr: "Advance your programming skills with the best professional tools."}));
+  createRoot(document.getElementById('great-value')).render(React.createElement(IconHeaderText, {iconSimbol: GreatValue, iconHeading: "Great value", paragraphDescr: "Get 10 IDEs for the price of 2."}));
+  createRoot(document.getElementById('flexibility')).render(React.createElement(IconHeaderText, {iconSimbol: Flexibility, iconHeading: "Flexibility", paragraphDescr: "Use different tools for different projects on multiple machines as and when you need them. Easily switch between the tools under the All Products Pack license."}));
+  createRoot(document.getElementById('toggle')).render(React.createElement(IconHeaderText, {iconSimbol: UseAccount, iconHeading: "Simple license management", paragraphDescr: "One unique license includes all the JetBrains desktop tools. Get unlimited access to all of them."}));
+  createRoot(document.getElementById('skill')).render(React.createElement(IconHeaderText, {iconSimbol: Learn, iconHeading: "Further your skills", paragraphDescr: "Advance your programming skills with the best professional tools."}));
   createRoot(document.getElementById('maintain-tools')).render(React.createElement(HeadingTextLink,{headingTxt: "Maintain your tools with the Toolbox App", simpleTxt: "Simple installations, updates, and more", linkToSmt: "", txtToLink: "Learn More"}));
 
 
@@ -101,12 +117,11 @@ document.addEventListener('DOMContentLoaded', () => {
   createRoot(document.getElementById('hp')).render(React.createElement(ProductPackImage,{allProductPackImage: hp, clsName:"hp-media" }));
   createRoot(document.getElementById('samsung')).render(React.createElement(ProductPackImage,{allProductPackImage: samsung, clsName:"samsung-media" }));
   createRoot(document.getElementById('sales-force')).render(React.createElement(ProductPackImage,{allProductPackImage: salesForce, clsName: "sales-media" }));
-  createRoot(document.getElementById('expedia')).render(React.createElement(ProductPackImage,{allProductPackImage: expedia }));
+  createRoot(document.getElementById('expedia')).render(React.createElement(ProductPackImage,{allProductPackImage: expedia, clsName: "expedia-media" }));
   createRoot(document.getElementById('twitter')).render(React.createElement(ProductPackImage,{allProductPackImage: twitter,  clsName:"twitter-media" }));
   createRoot(document.getElementById('faq-container')).render(React.createElement(FaqContainer,{headingTxt: "FAQ", simpleTxt: "Can I upgrade my existing IntelliJ IDEA, PyCharm, WebStorm or ReSharper Ultimate or any other JetBrains IDE license to the All Products Pack?", txt: "Yes, your existing licenses to any JetBrains desktop product make you eligible to purchase new All Products Pack subscriptions with an additional discount." }));
   createRoot(document.getElementById('faq-second-container')).render(React.createElement(FaqContainer,{simpleTxt: "How to upgrade to the All Products Pack?", txt: "You can upgrade your current subscription to All Products Pack license from your JetBrains account using the “Upgrade” link, which is displayed next to all the licenses that can be upgraded. You can click this link to go to JetBrains eStore and complete the order. If you have any questions, please contact Sales."}));
 
-  createRoot(document.getElementById('trust')).render(React.createElement(HeadingTextLink,{headingTxt: "Trusted by 320,083 businesses worldwide"}));
   createRoot(document.getElementById('main-heading')).render(React.createElement(MainHeading,{mainHeading: "All Products Pack" }));
   createRoot(document.getElementById('enhance-productivity')).render(React.createElement(FaqContainer,{headingTxt: "Enhance your productivity and speed up coding with JetBrains tools!" }));
 
@@ -116,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
   createRoot(document.getElementById('email-form')).render(<EmailForm/>);
 
 
-  createRoot(document.getElementById('follow-us')).render(React.createElement(SmHeading,{idSmallestHeading: "flw-us", smallestHeadingTxt: "Follow Us"}));
+  createRoot(document.getElementById('follow-us')).render(React.createElement(SmHeading,{idSmallestHeading: "flwUs", smallestHeadingTxt: "Follow Us"}));
   createRoot(document.getElementById('twitter-pack')).render(React.createElement(IconLink,{linkImage: twitterPack, txtLink: "@AllProductsPack on Twitter"}));
   createRoot(document.getElementById('blog')).render(React.createElement(IconLink,{linkImage: blog, txtLink: "JetBrains Blog"}));
   createRoot(document.getElementById('bug')).render(React.createElement(IconLink,{linkImage: bug, txtLink: "Bug and Issue Tracker"}));
@@ -141,6 +156,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   createRoot(document.getElementById('trust')).render(React.createElement(FaqContainer,{headingTxt: "Trusted by 320,083 businesses worldwide" }));
+
+
+  createRoot(document.getElementById('ij-ide')).render(React.createElement(ProductIcon,{allProductPackImage: ideIj, clsName:"ide-ij", url:"https://www.jetbrains.com/idea/"}));
+  createRoot(document.getElementById('ws-ide')).render(React.createElement(ProductIcon,{allProductPackImage: ideWs, clsName:"ide-ws", url:"https://www.jetbrains.com/webstorm/"}));
+  createRoot(document.getElementById('ri-ide')).render(React.createElement(ProductIcon,{allProductPackImage: ideRi, clsName:"ide-ri", url:"https://www.jetbrains.com/rider/"}));
+  createRoot(document.getElementById('ru-ide')).render(React.createElement(ProductIcon,{allProductPackImage: ideRu, clsName:"ide-ru", url:"https://www.jetbrains.com/ruby/"}));
+  createRoot(document.getElementById('re-ide')).render(React.createElement(ProductIcon,{allProductPackImage: ideRe, clsName:"ide-re", url:"https://www.jetbrains.com/resharper/"}));
+  createRoot(document.getElementById('ap-ide')).render(React.createElement(ProductIcon,{allProductPackImage: ideAp, clsName:"ide-ap", url:"https://www.jetbrains.com/objc/"}));
+  createRoot(document.getElementById('da-ide')).render(React.createElement(ProductIcon,{allProductPackImage: ideDa, clsName:"ide-da", url:"https://www.jetbrains.com/datagrip/"}));
+  createRoot(document.getElementById('cl-ide')).render(React.createElement(ProductIcon,{allProductPackImage: ideCl, clsName:"ide-cl", url:"https://www.jetbrains.com/clion/"}));
+  createRoot(document.getElementById('ph-ide')).render(React.createElement(ProductIcon,{allProductPackImage: idePh, clsName:"ide-ph", url:"https://www.jetbrains.com/phpstorm/"}));
+  createRoot(document.getElementById('py-ide')).render(React.createElement(ProductIcon,{allProductPackImage: idePy, clsName:"ide-py", url:"https://www.jetbrains.com/pycharm/"}));
+
+
+  createRoot(document.getElementById('rs-ext')).render(React.createElement(ProductIcon,{allProductPackImage: extRs, clsName:"ext-rs", url:"https://www.jetbrains.com/resharper/"}));
+  createRoot(document.getElementById('rsu-ext')).render(React.createElement(ProductIcon,{allProductPackImage: ideRe, clsName:"ext-rsu", url:"https://www.jetbrains.com/resharper-cpp/"}));
+  createRoot(document.getElementById('dc-ext')).render(React.createElement(ProductIcon,{allProductPackImage: extDc, clsName:"ext-dc", url:"https://www.jetbrains.com/dotcover/"}));
+  createRoot(document.getElementById('dm-ext')).render(React.createElement(ProductIcon,{allProductPackImage: extDm, clsName:"ext-dm", url:"https://www.jetbrains.com/dotmemory/"}));
+  createRoot(document.getElementById('dt-ext')).render(React.createElement(ProductIcon,{allProductPackImage: extDt, clsName:"ext-dt", url:"https://www.jetbrains.com/profiler/"}));
 
 
 
