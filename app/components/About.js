@@ -8,7 +8,7 @@ function About() {
       <Container className='about'>
 
         <Container className='list-about'>
-          <h6>About</h6>
+          <h6 id="about">About</h6>
         <ul>
         <li>Company</li>
         <li>Contacts</li>

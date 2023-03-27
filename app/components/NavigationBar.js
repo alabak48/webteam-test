@@ -10,6 +10,7 @@ function NavigationBar() {
       <Navbar collapseOnSelect expand="lg" id='Navigation'>
         <Container className='NavigationContainer'>
           <Navbar.Brand href="#home" id='toolbox'>Toolbox</Navbar.Brand>
+          <Navbar.Brand href="#home" id='toolbox1'>Overview</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">

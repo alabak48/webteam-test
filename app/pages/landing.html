@@ -10,8 +10,8 @@
 </head>
 <body>
 <!- Navigation Bar -->
-<div class="wt-section">
-    <div class="container" id="navigation-bar">
+<div class="wt-section" id="navigation">
+    <div class="wt-col-12 wt-col-sm-inline" id="navigation-bar">
     </div>
 </div>
 
@@ -21,7 +21,6 @@
 <div class="wt-section">
     <div class="wt-container">
         <div class="wt-row wt-row_size_m wt-row-sm_size_0 wt-row-sm_direction_column-reverse">
-            <div class="wt-col-break wt-col-xlg-auto-fill wt-col-sm-break"></div>
             <!-- Left side with an image-->
             <div class="wt-col-6 wt-col-sm-break wt-col-xlg-auto-fill">
                 <span id="product-pack-image"></span>
@@ -35,10 +34,13 @@
                 <div class="wt-col-7 wt-col-sm-break wt-offset-top-24">
                     <span class="third-level-heading"><h3>The complete full-stack developer toolkit</h3></span>
                 </div>
-                <div class="wt-col-7 wt-col-sm-break wt-offset-top-24" id="want-it-all-button"></div>
-                <div class="wt-col-7 wt-col-sm-break wt-offset-top-24">An upgrade and switch option available</div>
+                <div class="wt-col-7 wt-col-sm-break wt-offset-top-24">
+                    <div id="want-it-all-button"></div>
+                </div>
+                <div class="wt-col-7 wt-col-sm-break wt-offset-top-24">
+                    <div id="upgrade-switch"></div>
+                </div>
             </div>
-
         </div>
     </div>
 </div>
@@ -47,25 +49,30 @@
 <!- 10 IDEs -->
 <div class="wt-section">
     <div class="wt-container">
-        <div class="wt-row wt-row_size_m ">
-            <div class="wt-col-6 wt-col-sm-break wt-col-auto-fill">
+        <div
+            class="wt-row wt-row_size_m wt-row_align-items_center wt-row-sm_justify_evenly wt-row-sm_direction_column-reverse">
+            <div class="wt-col-6 wt-col_align-self_start wt-col-sm-break wt-col-auto-fill">
                 <h4>10 IDEs</h4>
-                <div id="ide-table"></div>
-
             </div>
-            <!-- Right side of 10IDEs section -->
             <div class="wt-col-6 wt-col-sm-break wt-col-auto-fill">
-                <h6>Get access to all JetBrains desktop tools including 10 IDEs,
-                    2 extensions and 3 profilers</h6>
+                <div id="sm-heading"></div>
+            </div>
+        </div>
+        <div class="wt-row wt-row_size_m wt-row_align-items_center wt-row-sm_justify_evenly">
+            <!-- Right side of 10IDEs section -->
+            <div class="wt-col-6 wt-row-sm_justify_center align-content-center wt-col-sm-break wt-col-auto-fill">
+                <div id="ide-table"></div>
+            </div>
+            <div class="wt-col-6 align-content-center wt-col-sm-break wt-col-auto-fill">
                 <div class="wt-row wt-row_size_m">
-                    <div class="wt-col-3 wt-col-sm-break wt-col-auto-fill">
+                    <div class="wt-col-3 wt-col-sm-break wt-col-auto-fill wt-offset-top-24">
                         <span id="intellij"></span>
                         <span id="rider"></span>
                         <span id="resharper"></span>
                         <span id="datagrip"></span>
                         <span id="phpstorm"></span>
                     </div>
-                    <div class="wt-col-3 wt-col-sm-break wt-col-auto-fill">
+                    <div class="wt-col-3 wt-col-sm-break wt-col-auto-fill wt-offset-top-24">
                         <span id="webstorm"></span>
                         <span id="rubymine"></span>
                         <span id="appcode"></span>
@@ -152,16 +159,17 @@
 
 <div class="wt-section_bg_gray-dark ">
     <div class="container">
-        <div class="wt-row wt-row-sm-wide wt-row_size_m wt-row_align-items_center wt-row-sm_justify_evenly">
+        <div
+            class="wt-row wt-row-sm_size_s wt-row-sm-wide wt-row_size_m wt-row_align-items_center wt-row-sm_justify_evenly wt-row-sm_align-items_center">
 
             <!-- Left side with an image-->
-            <div class="wt-col-4 wt-col_align-self_center wt-col-sm-break">
+            <div class="wt-col-4 wt-col_align-self_center">
                 <span id="screen-product-page"></span>
             </div>
 
-            <div class="wt-col-7  wt-col-sm-12 wt-col_align-self_center">
-                <div class="wt-col-auto-fill wt-offset-top-24 wt-col-sm-break">
-                    <span id="maintain-tools"></span>
+            <div class="wt-col-7  wt-col-sm-12 wt-col_align-self_center wt-col-sm_align-self_center">
+                <div class="wt-col-auto-fill wt-offset-top-48 wt-col-sm-break wt-col-sm_align-self_center">
+                    <div id="maintain-tools"></div>
                 </div>
             </div>
 
@@ -173,22 +181,26 @@
 <!--  Trusted -->
 <div class="wt-section">
     <div class="container">
-        <div class="wt-row wt-row_size_m wt-row_align-items_center">
-            <div class="wt-col-auto-fill wt-col-sm-break">
+        <div class="wt-row wt-row_size_m wt-row_align-items_center wt-row-sm_size_s">
+            <div class="wt-col-3 wt-col-sm-break wt-offset-top-24">
                 <span id="trust"></span>
-                <span></span>
+
             </div>
-            <div class="wt-col-auto-fill wt-col-sm-break">
-                <span id="google"></span>
-                <span id="sales-force"></span>
-            </div>
-            <div class="wt-col-auto-fill wt-col-sm-break">
-                <span id="hp"></span>
-                <span id="expedia"></span>
-            </div>
-            <div class="wt-col-auto-fill wt-col-sm-break">
-                <span id="samsung"></span>
-                <span id="twitter"></span>
+            <div class="wt-col-9 wt-col-sm-break wt-offset-top-24">
+                <div class="wt-row wt-row_size_m">
+                    <div class="wt-col-3 wt-col-sm-break wt-offset-top-24">
+                        <span id="google"></span>
+                        <span id="sales-force"></span>
+                    </div>
+                    <div class="wt-col-3 wt-offset-top-24">
+                        <span id="hp"></span>
+                        <span id="expedia"></span>
+                    </div>
+                    <div class="wt-col-3 wt-offset-top-24">
+                        <span id="samsung"></span>
+                        <span id="twitter"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -220,7 +232,7 @@
                 <span id="image-third"></span>
             </div>
 
-            <div class="wt-col-4 wt-offset-top-24 wt-col-sm-break">
+            <div class="wt-col-4 wt-col-sm-break">
                 <span id="enhance-productivity"></span>
                 <span id="download-packs"></span>
             </div>
@@ -231,48 +243,54 @@
 
 <!--  Stay updated -->
 <div class="wt-section_bg_gray-light">
-    <div class="container ">
-        <div class="wt-row wt-row_size_m">
-            <div class="wt-col-6 wt-offset-top-24 wt-col-sm-break">
+    <div class="container">
+        <div class="form-follow">
+        <div class="wt-row wt-row-sm_size_s wt-row_size_m">
+            <div class="wt-col-6 wt-col-sm-break">
                 <div id="stay-updated"></div>
                 <div id="email-form"></div>
             </div>
             <div class="wt-col-6 wt-offset-top-24 align-content-center wt-col-sm-break">
-                <h5>Follow us</h5>
                 <div id="follow-us"></div>
                 <div id="twitter-pack"></div>
                 <div id="blog"></div>
                 <div id="bug"></div>
-
+            </div>
             </div>
         </div>
     </div>
 </div>
 <!--  Stay updated -->
-<div class="wt-section_bg_dark ">
+<div class="wt-section_bg_dark">
     <div class="container">
-        <div class="wt-row wt-row_size_m">
-            <div class="wt-col-3 wt-offset-top-24 align-content-center wt-col-sm-break">
+        <div class="wt-row wt-row_size_m wt-row-sm_size_s">
+            <div class="wt-col-1 wt-offset-top-24 align-content-center">
                 <span id="jb-logo"></span>
             </div>
-            <div class="wt-col-3 wt-offset-top-24 align-content-center wt-col-sm-break">
-                <span id="about-us"></span>
+            <div class="wt-col-2 align-content-center wt-col-sm-break">
+                <span id="about"></span>
             </div>
-            <div class="wt-col-3 wt-offset-top-24 align-content-center wt-col-sm-break">
-                <div id="facebook-social"></div>
-                <div id="twitter-social"></div>
-                <div id="linkedin-social"></div>
-                <div id="read-social"></div>
+            <div class="wt-col-3 wt-offset-top-24 wt-col-sm-inline wt-offset-top-sm-96">
+                <div id="follow-jb"></div>
+                <div class="wt-row wt-row_size_m wt-row-sm_size_s">
+                    <div id="fb"></div>
+                    <div id="twt"></div>
+                    <div id="lnkd"></div>
+                    <div id="yt"></div>
+                </div>
             </div>
         </div>
-        <div class="wt-row wt-row_size_m wt-offset-top-24">
+        <div class="wt-row wt-row_size_m wt-row-sm_size_s wt-offset-top-sm-48">
+
             <div class="wt-col-3 wt-offset-top-24 align-content-center wt-col-sm-break">
 
+                <span id="rights"></span>
             </div>
             <div class="wt-col-3 wt-offset-top-24 align-content-center wt-col-sm-break">
-
+                <span id="drive"></span>
             </div>
             <div class="wt-col-3 wt-offset-top-24 align-content-center wt-col-sm-break">
+                <span id="privacy"></span>
 
             </div>
         </div>

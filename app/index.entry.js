@@ -8,7 +8,6 @@ import {createRoot} from "react-dom/client";
 import NavigationBar from "./components/NavigationBar";
 import ProductPackImage from "./components/ProductPackImage";
 import React from "react";
-import TypesExample from "./components/Buttons";
 import MainHeading from "./components/MainHeading";
 import TableIDE from "./components/TenIdeS";
 import IdeLanguages from "./components/IdeLanguages";
@@ -37,6 +36,13 @@ import bug from "assets/bug.svg";
 import blog from "assets/blog.svg";
 import jetbrains from "assets/jb.svg";
 import About from "./components/About";
+import SmHeading from "./components/SmHeading";
+import Buttons from "./components/Buttons";
+import Fb from "assets/fb.svg";
+import Twt from "assets/twt.svg";
+import Lnkd from "assets/lnkd.svg";
+import Yt from "assets/yt.svg";
+
 
 
 
@@ -52,9 +58,9 @@ document.addEventListener('DOMContentLoaded', () => {
   root.render(<NavigationBar/>);
 
 
-  const btnWantAll = document.getElementById('want-it-all-button');
-  const wantItAllBtn = createRoot(btnWantAll);
-  wantItAllBtn.render(<TypesExample/>);
+
+
+  createRoot(document.getElementById('want-it-all-button')).render(React.createElement(Buttons,{btnTxt: "I want it all"}));
 
 
   createRoot(document.getElementById('product-pack-image')).render(React.createElement(ProductPackImage,{allProductPackImage: allProductPackImage, clsName:"mainImage" }));
@@ -68,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
   createRoot(document.getElementById('ext-table')).render(React.createElement(TableIDE, {isIdeTable: false}));
 
   createRoot(document.getElementById('intellij')).render(React.createElement(IdeLanguages, {headerText: "IntelliJ IDEA Ultimate", buttonText: "Kotlin", buttonText2: "Java"}));
-  createRoot(document.getElementById('webstorm')).render(React.createElement(IdeLanguages, {headerText: "WebStorm", buttonText: "mysql", buttonText2: ""}));
+  createRoot(document.getElementById('webstorm')).render(React.createElement(IdeLanguages, {headerText: "WebStorm", buttonText: "HTML", buttonText2: ""}));
   createRoot(document.getElementById('rider')).render(React.createElement(IdeLanguages, {headerText: "Rider", buttonText: "C#", buttonText2: ".NET"}));
   createRoot(document.getElementById('rubymine')).render(React.createElement(IdeLanguages, {headerText: "RubyMine", buttonText: "Ruby", buttonText2: ""}));
   createRoot(document.getElementById('resharper')).render(React.createElement(IdeLanguages, {headerText: "ReSharper Ultimate", buttonText: "C++", buttonText2: ""}));
@@ -91,15 +97,13 @@ document.addEventListener('DOMContentLoaded', () => {
   createRoot(document.getElementById('maintain-tools')).render(React.createElement(HeadingTextLink,{headingTxt: "Maintain your tools with the Toolbox App", simpleTxt: "Simple installations, updates, and more", linkToSmt: "", txtToLink: "Learn More"}));
 
 
-  createRoot(document.getElementById('google')).render(React.createElement(ProductPackImage,{allProductPackImage: google }));
-  createRoot(document.getElementById('hp')).render(React.createElement(ProductPackImage,{allProductPackImage: hp }));
-  createRoot(document.getElementById('samsung')).render(React.createElement(ProductPackImage,{allProductPackImage: samsung }));
-  createRoot(document.getElementById('sales-force')).render(React.createElement(ProductPackImage,{allProductPackImage: salesForce }));
+  createRoot(document.getElementById('google')).render(React.createElement(ProductPackImage,{allProductPackImage: google, clsName:"google-media"}));
+  createRoot(document.getElementById('hp')).render(React.createElement(ProductPackImage,{allProductPackImage: hp, clsName:"hp-media" }));
+  createRoot(document.getElementById('samsung')).render(React.createElement(ProductPackImage,{allProductPackImage: samsung, clsName:"samsung-media" }));
+  createRoot(document.getElementById('sales-force')).render(React.createElement(ProductPackImage,{allProductPackImage: salesForce, clsName: "sales-media" }));
   createRoot(document.getElementById('expedia')).render(React.createElement(ProductPackImage,{allProductPackImage: expedia }));
-  createRoot(document.getElementById('twitter')).render(React.createElement(ProductPackImage,{allProductPackImage: twitter }));
-  createRoot(document.getElementById('trust')).render(React.createElement(HeadingTextLink,{headingTxt: "Trusted by 320,083 businesses worldwide"}));
-  createRoot(document.getElementById('trust')).render(React.createElement(HeadingTextLink,{headingTxt: "Trusted by 320,083 businesses worldwide"}));
-  createRoot(document.getElementById('faq-container')).render(React.createElement(FaqContainer,{headingTxt: "FAQ", simpleTxt: "Can I upgrade my existing IntelliJ IDEA, PyCharm, WebStorm or ReSharper Ultimate or any other JetBrains IDE license to the All Products Pack", txt: "Yes, your existing licenses to any JetBrains desktop product make you eligible to purchase new All Products Pack subscriptions with an additional discount." }));
+  createRoot(document.getElementById('twitter')).render(React.createElement(ProductPackImage,{allProductPackImage: twitter,  clsName:"twitter-media" }));
+  createRoot(document.getElementById('faq-container')).render(React.createElement(FaqContainer,{headingTxt: "FAQ", simpleTxt: "Can I upgrade my existing IntelliJ IDEA, PyCharm, WebStorm or ReSharper Ultimate or any other JetBrains IDE license to the All Products Pack?", txt: "Yes, your existing licenses to any JetBrains desktop product make you eligible to purchase new All Products Pack subscriptions with an additional discount." }));
   createRoot(document.getElementById('faq-second-container')).render(React.createElement(FaqContainer,{simpleTxt: "How to upgrade to the All Products Pack?", txt: "You can upgrade your current subscription to All Products Pack license from your JetBrains account using the “Upgrade” link, which is displayed next to all the licenses that can be upgraded. You can click this link to go to JetBrains eStore and complete the order. If you have any questions, please contact Sales."}));
 
   createRoot(document.getElementById('trust')).render(React.createElement(HeadingTextLink,{headingTxt: "Trusted by 320,083 businesses worldwide"}));
@@ -111,18 +115,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
   createRoot(document.getElementById('email-form')).render(<EmailForm/>);
 
+
+  createRoot(document.getElementById('follow-us')).render(React.createElement(SmHeading,{idSmallestHeading: "flw-us", smallestHeadingTxt: "Follow Us"}));
   createRoot(document.getElementById('twitter-pack')).render(React.createElement(IconLink,{linkImage: twitterPack, txtLink: "@AllProductsPack on Twitter"}));
   createRoot(document.getElementById('blog')).render(React.createElement(IconLink,{linkImage: blog, txtLink: "JetBrains Blog"}));
   createRoot(document.getElementById('bug')).render(React.createElement(IconLink,{linkImage: bug, txtLink: "Bug and Issue Tracker"}));
 
+  createRoot(document.getElementById('sm-heading')).render(React.createElement(SmHeading,{idSmallestHeading: "get-access", smallestHeadingTxt: "Get access to all JetBrains desktop tools including 10 IDEs, 2 extensions and 3 profilers"}));
+  createRoot(document.getElementById('upgrade-switch')).render(React.createElement(SmHeading,{idSmallestHeading: "switch", smallestHeadingTxt: "An upgrade and switch option available"}));
+
+
   createRoot(document.getElementById('jb-logo')).render(React.createElement(ProductPackImage,{allProductPackImage: jetbrains }));
 
-  createRoot(document.getElementById('facebook-social')).render(React.createElement(IconLink,{linkImage: twitterPack}));
-  createRoot(document.getElementById('twitter-social')).render(React.createElement(IconLink,{linkImage: blog}));
-  createRoot(document.getElementById('linkedin-social')).render(React.createElement(IconLink,{linkImage: bug}));
-  createRoot(document.getElementById('read-social')).render(React.createElement(IconLink,{linkImage: bug}));
+  createRoot(document.getElementById('follow-jb')).render(React.createElement(SmHeading,{idSmallestHeading: "flw-us", smallestHeadingTxt: "Follow Jetbrains"}));
+  createRoot(document.getElementById('fb')).render(React.createElement(IconLink,{linkImage: Fb, clsName:"f-b" }));
+  createRoot(document.getElementById('twt')).render(React.createElement(IconLink,{linkImage: Twt, clsName:"t-w" }));
+  createRoot(document.getElementById('lnkd')).render(React.createElement(IconLink,{linkImage: Lnkd, clsName:"ln-kd" }));
+  createRoot(document.getElementById('yt')).render(React.createElement(IconLink,{linkImage: Yt, clsName:"y-t" }));
 
-  createRoot(document.getElementById('about-us')).render(<About/>);
+  createRoot(document.getElementById('about')).render(<About/>);
+
+  createRoot(document.getElementById('rights')).render(React.createElement(SmHeading,{idSmallestHeading: "rghts", smallestHeadingTxt: "© 2000—2017 JetBrains s.r.o. All rights reserved."}));
+  createRoot(document.getElementById('drive')).render(React.createElement(SmHeading,{idSmallestHeading: "drv", smallestHeadingTxt: " Developed with drive and IntelliJ IDEA"}));
+  createRoot(document.getElementById('privacy')).render(React.createElement(SmHeading,{idSmallestHeading: "prv", smallestHeadingTxt: "Privacy & Security  l  Terms of Use"}));
+
+
+  createRoot(document.getElementById('trust')).render(React.createElement(FaqContainer,{headingTxt: "Trusted by 320,083 businesses worldwide" }));
 
 
 

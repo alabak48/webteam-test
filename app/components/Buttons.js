@@ -1,12 +1,12 @@
 import Button from 'react-bootstrap/Button';
 import React from 'react';
 import 'index.entry.pcss';
-function TypesExample() {
+function Buttons(props) {
   return (
     <>
-      <Button variant="primary" id='btn'>I Want It All</Button>
+      <Button id='btn-org'>{props.btnTxt}</Button>
     </>
   );
 }
 
-export default TypesExample;
+export default Buttons;
