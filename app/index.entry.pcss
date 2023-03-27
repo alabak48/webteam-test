@@ -15,6 +15,10 @@ body {
   --dim-color: #696969;
   --gray-color: #afb1b3;
   --text-color: #27282c;
+  --orange-color: #f76707;
+  --font-eighteen: 18px;
+  --font-fourteen: 14px;
+  --spacer-sixtyfour: 64px;
 
 }
 .example-for-breakpoints {
@@ -63,7 +67,7 @@ body {
 
 .text-1 {
   letter-spacing: normal;
-  font-size: 18px;
+  font-size: var(--font-eighteen);
   font-weight: 400;
   line-height: 28px;
   color: rgba(39, 40, 44, .7);
@@ -110,7 +114,7 @@ body {
 
 #toolbox {
   @media (--sm) {
-    color: darkorange;
+    color: var(--orange-color);
     display: none;
   }
 }
@@ -179,7 +183,7 @@ body {
 
 #get-access{
 @media (--sm) {
-  font-size: 18px;
+  font-size: var(--font-eighteen);
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -202,8 +206,8 @@ body {
 #btn-org{
   padding: 8px 40px 8px 40px;
   border-radius: 25px;
-  border: #f76707 solid;
-  background-color: #f76707;
+  border: var(--orange-color) solid;
+  background-color: var(--orange-color);
   opacity: 1;
 }
 
@@ -240,7 +244,7 @@ body {
 }
 
 #second-heading{
-  font-size: 18px;
+  font-size: var(--font-eighteen);
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -251,7 +255,7 @@ body {
 
 #link-learn-more{
   text-decoration: none;
-  color: #f76707;
+  color: var(--orange-color);
 }
 
 #faq-container{
@@ -262,18 +266,18 @@ body {
   width: 386px;
   height: 28px;
   margin: 48px 29px 134px 20px;
-  font-size: 18px;
+  font-size: var(--font-eighteen);
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.56;
   letter-spacing: normal;
-  color: #f76707;
+  color: var(--orange-color);
   @media (--sm) {
-    font-size: 14px;
+    font-size: var(--font-fourteen);
   }
   @media (--md) {
-    font-size: 14px;
+    font-size: var(--font-fourteen);
   }
 }
 
@@ -307,12 +311,12 @@ body {
   @media (--sm) {
     width: 305px;
     height: 305px;
-    padding-top: 64px;
+    padding-top: var(--spacer-sixtyfour);
   }
   @media (--md) {
     width: 290px;
     height: 290px;
-    padding-top: 64px;
+    padding-top: var(--spacer-sixtyfour);
   }
 }
 
@@ -344,7 +348,7 @@ body {
 
 #sm-heading{
   @media (--sm) {
-    font-size: 18px;
+    font-size: var(--font-eighteen);
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -362,7 +366,7 @@ body {
   }
   @media (--md) {
     color: var(--text-color);
-    font-size: 14px;
+    font-size: var(--font-fourteen);
   }
 }
 
@@ -372,7 +376,7 @@ body {
 }
 
 #txtIconHover:hover{
-  color: orange;
+  color: var(--orange-color);
 }
 
 #maintain-tools{
@@ -396,7 +400,7 @@ body {
 #second{
   @media (--sm) {
     margin-top: 16px;
-    font-size: 18px;
+    font-size: var(--font-eighteen);
     color: var(--text-color);
   }
 }
@@ -413,8 +417,8 @@ body {
   padding-top: 96px;
   padding-bottom: 96px;
   @media (--sm) {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: var(--spacer-sixtyfour);
+    padding-bottom: var(--spacer-sixtyfour);
   }
 }
 
@@ -426,7 +430,7 @@ body {
 
 #bug{
   @media (--sm) {
-    margin-bottom: 64px;
+    margin-bottom: var(--spacer-sixtyfour);
   }
 }
 
@@ -436,13 +440,13 @@ body {
 }
 
 #flwUs{
-  font-size: 18px;
+  font-size: var(--font-eighteen);
 }
 
 #flw-us{
   color: white;
   @media (--md) {
-    font-size: 14px;
+    font-size: var(--font-fourteen);
   }
 }
 
@@ -453,13 +457,13 @@ body {
 #about{
   margin-left: 33px;
   @media (--md) {
-    font-size: 14px;
+    font-size: var(--font-fourteen);
   }
 }
 
 #rghts, #drv {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 15px;
+  font-size: var(--font-fourteen);
   font-weight: lighter;
   @media (--md) {
     font-size: 10px;
@@ -469,7 +473,7 @@ body {
 }
 #prv{
   color: #ffffff;
-  font-size: 15px;
+  font-size: var(--font-fourteen);
   font-weight: lighter;
   @media (--md) {
     font-size: 10px;
@@ -538,8 +542,6 @@ body {
   opacity: 1;
 }
 
-
-
 #main-table{
   @media (--sm) {
     display: none;
@@ -572,7 +574,7 @@ body {
   }
 
 #header-mobile{
-  font-size: 15px;
+  font-size: var(--font-fourteen);
   font-stretch: normal;
   font-style: normal;
   line-height: 1.6;
@@ -584,7 +586,6 @@ body {
 
 .button-languages{
   @media (--sm) {
-
     font-size: 10px;
     font-weight: normal;
     font-stretch: normal;
