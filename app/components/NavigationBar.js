@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 import 'index.entry.pcss';
 function NavigationBar() {
   return (
-      <Navbar collapseOnSelect expand="lg" id='Navigation'>
+      <Navbar collapseOnSelect expand="lg" id='Navigation' fixed="top">
         <Container className='NavigationContainer'>
           <Navbar.Brand href="#home" id='toolbox'>Toolbox</Navbar.Brand>
           <Navbar.Brand href="#home" id='toolbox1'>Overview</Navbar.Brand>

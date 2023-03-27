@@ -176,6 +176,8 @@ document.addEventListener('DOMContentLoaded', () => {
   createRoot(document.getElementById('dm-ext')).render(React.createElement(ProductIcon,{allProductPackImage: extDm, clsName:"ext-dm", url:"https://www.jetbrains.com/dotmemory/"}));
   createRoot(document.getElementById('dt-ext')).render(React.createElement(ProductIcon,{allProductPackImage: extDt, clsName:"ext-dt", url:"https://www.jetbrains.com/profiler/"}));
 
+  createRoot(document.getElementById('third-level-heading')).render(React.createElement(SmHeading,{idSmallestHeading: "third-heading", smallestHeadingTxt: "The complete full-stack developer toolkit"}));
+
 
 
 
